@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.guendinchoin.middleterm.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:ems="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtFirstNumber"
+            android:hint="a"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:padding="10px"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:ems="4"
+            android:layout_height="match_parent"
+            android:id="@+id/edtSecondNumber"
+            android:hint="b"
+            android:gravity="center"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnEquals"
+            android:text="=" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginStart="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="30px"
+        android:text="Result" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViews"
+        android:layout_below="@id/tvResult"/>
+</RelativeLayout>
